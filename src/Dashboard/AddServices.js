@@ -4,53 +4,49 @@ import { db } from '../Components/firebase'
 import './AddServices.css'
 
 
-
 const AddServices = () => {
     const [title, settitle] = useState('')
     const [price, setprice] = useState('')
     const [details, setdetails] = useState('')
     const [img, setimg] = useState('')
+    const [mobile, setmobile] = useState('')
     const [services, setservices] = useState([])
 
     const submit =()=>{
     
-            db.collection('Services').add({title:title,price:price,details:details,img:img})
+            db.collection('Services').add({title:title,price:price,details:details,img:img,mobile:mobile})
             settitle('')
             setprice('')
             setdetails('')
             setimg('')
             setservices('')
-      
-         
-          
+            setmobile('')   
     }
-
-   
 
   return (
     <>
-    <h2 className='text-center my-3'>Add Services</h2>
+    <h2 className='maintitle '>Add Services</h2>
       <div className='formdiv'>
         <form class=" formmm row g-3">
           <div class="col-md-6">
             <label for="inputEmail4" class="form-label">Title</label>
-            <input type="text" class="form-control" id="inputEmail4" value={title} onChange={(e)=>settitle(e.target.value)} />
+            <input type="text" class="form-control" id="inputEmail4" placeholder='Keyword Title' value={title} onChange={(e)=>settitle(e.target.value)} maxlength="25"   />
           </div>
           <div class="col-md-6">
             <label for="inputPassword4" class="form-label">Phone No</label>
-            <input type="text" class="form-control" id="inputPassword4"    />
+            <input type="tel" class="form-control" id="inputPassword4" placeholder='Phone No'  maxlength="10"    value={mobile}  onChange={(e)=>setmobile(e.target.value)}  />
           </div>
           <div class="col-12">
-            <label for="inputAddress" class="form-label">Images</label>
-            <input type="text" class="form-control" id="inputAddress" value={img}  onChange={(e)=>setimg(e.target.value)} />
+            <label for="inputAddress" class="form-label">Image</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder='Copy Image Address' value={img}  onChange={(e)=>setimg(e.target.value)} />
           </div>
           <div class="col-12">
-            <label for="inputAddress2" class="form-label">Dtails </label>
-            <input type="text" class="form-control" id="inputAddress2" value={details}  onChange={(e)=>setdetails(e.target.value)} />
+            <label for="inputAddress2" class="form-label">Details</label>
+            <input type="text" class="form-control" placeholder='100 letters ' id="inputAddress2" value={details}  onChange={(e)=>setdetails(e.target.value)}  maxlength="100"  />
           </div>
           <div class="col-md-6">
             <label for="inputCity" class="form-label">Price</label>
-            <input type="text" class="form-control" id="inputCity" value={price}  onChange={(e)=>setprice(e.target.value)} />
+            <input type="text" class="form-control" id="inputCity" placeholder='Price' value={price}  onChange={(e)=>setprice(e.target.value)} />
           </div>
           <div class="col-md-6">
             <label for="inputState" class="form-label">Services</label>

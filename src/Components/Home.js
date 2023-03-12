@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { db } from './firebase'
 import './Home.css'
 
 const Home = () => {
+
 
     const [search, setsearch] = useState("")
 
@@ -17,6 +19,7 @@ const Home = () => {
     console.log(search);
 
     return (
+
         <>
             <div class=" container">
                 <div class=' row'>
@@ -25,31 +28,31 @@ const Home = () => {
                 </div>
             </div>
             {first.filter((e) => {
-            if (search == "") {
-              return "";
-            } else if (
-              e.data.title.toLowerCase().indexOf(search.toLowerCase()) !== -1 )
-           {
-              return e;
-            }
-          })
-            .map((e) => (
-                <>
-                    <div class='conn container'>
-                        <div class='boxss row'>
-                            <div className='rr col-lg-6'>
-                                <img className='imagess' src={e.data.img} />
-                            </div>
-                            <div className='rct col-lg-6'>
-                                <h4>{e.data.title}</h4>
-                                <h6>{e.data.details}</h6>
-                                <h5>₹ {e.data.price}</h5>
-                                <button className='btnnn'>Best Deals</button>
+                if (search == "") {
+                    return "";
+                } else if (
+                    e.data.title.toLowerCase().indexOf(search.toLowerCase()) !== -1) {
+                    return e;
+                }
+            })
+                .map((e) => (
+                    <>
+                        <div class='conn container'>
+                            <div class='boxss row'>
+                                <div className='rr col-lg-6' >
+                                    <img className='imagess' src={e.data.img}/>
+                                </div>
+                                <div className='rct col-lg-6'>
+                                    <h4 className='keytit' >{e.data.title}</h4>
+                                    <div className='deal'>
+                                    <Link to={`/page/${e.uid}`}><button className='btnnn'>Best Deals</button></Link>
+                                    </div>
+                                   
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </>
-            ))}
+                    </>
+                ))}
         </>
 
     )

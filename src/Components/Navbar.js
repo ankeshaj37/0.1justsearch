@@ -30,7 +30,7 @@ const Navbar = () => {
         <div className=" sudiv col-6">
          
           <div className="btn warning tog navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <div><img className='burgrr' src='https://img.icons8.com/ios-filled/512/menu-rounded.png' /></div>
+            <div><img className='burgrr' src='https://res.cloudinary.com/dgvvfn1gf/image/upload/v1678133032/ss_akvziu.png' /></div>
           </div>
           <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 
@@ -44,7 +44,7 @@ const Navbar = () => {
                 </li>
                 </a>
                 <a className='linku' to='/Category'> <li data-bs-dismiss="offcanvas" className=" linkss nav-item">
-                  SERVICE
+               CATEGORY
                 </li>
                 </a>
                 <a className='linku' to='/about'> <li data-bs-dismiss="offcanvas" className=" linkss nav-item">
@@ -83,6 +83,7 @@ const Navbar = () => {
       </div>
     </div>
   </div>
+  
     </>
    
 

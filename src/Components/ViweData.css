@@ -1,0 +1,44 @@
+.images{
+    
+    height: 400px;
+ 
+}
+.img{
+    width:100%;
+    height: 100%;
+}
+.bo{
+    margin-top: 5%;
+}
+
+.child{
+    background-color: red;
+    height: 93px;
+    width: 100px;
+    margin: 5px;
+}
+.cardss{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 10px;
+}
+.btn{
+    display: flex;
+   justify-content: center;
+    margin: 7%;
+  
+}
+.price{
+    text-align: center;
+    margin-top: 5%;
+}
+.ww{
+    display: flex;
+}
+.h3{
+    margin-top: 5%;
+}
+.tabss{
+    
+    justify-content: right;
+    display: flex;
+}

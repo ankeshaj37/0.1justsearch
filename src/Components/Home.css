@@ -8,8 +8,9 @@ justify-content: center;
   .btnn{
     margin-top: 20%;
     width: 100px;
-    background-color: black;
-    color: white;
+    background-color: skyblue;
+    color: black;
+    border: none;
   }
   
   
@@ -175,8 +176,8 @@ justify-content: center;
     }
   }
   .boxss{
-    background-color: #bebdbd;
-    height: 300px;
+    background-color: white;
+    height: auto;
     margin: 5%;
     width: 100%;
     display: flex;
@@ -187,6 +188,7 @@ justify-content: center;
   .conn{
     display: flex;
     justify-content: center;
+    
   }
   .imagess{
     width: 100%;
@@ -228,8 +230,9 @@ justify-content: center;
         
       }
       .boxss{
-        background-color: #bebdbd;
-        height: 300px; 
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        height: auto; 
         width: 65%;
         
       }
@@ -242,6 +245,16 @@ justify-content: center;
     color: black;
   }
  .btnnn{
-    background-color: black;
-    color: white;
+    background-color:skyblue;
+    color: black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border: none;
+    padding: 5px;
+ }
+ .keytit{
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  padding: 5px;
+ }
+ .deal{
+  margin: 10%;
  }

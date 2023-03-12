@@ -30,7 +30,7 @@
     color: black;
   }
   .linku:hover{
- background-color: gainsboro;
+ background-color:skyblue;
  
   }
   .burgrr{
@@ -76,6 +76,7 @@
 }
 .logoimages{
   width: 241px;
+ 
 }
 
 @media screen and (max-width: 480px) {
@@ -83,4 +84,7 @@
     width: 218%;
     margin-left: -31px;
   }
+}
+.logoname{
+  color: rgb(85, 199, 245);
 }

@@ -1,12 +1,8 @@
 .footer {
-    background-color: white;
-    height: 60px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: white;
-    color: black;
-    text-align: center;
-    padding: 5px;
+ margin-top: auto;
+ background-color: white;
+ height: 50px;
+ text-align: center;
+ padding-top: 10px;
+ color: rgb(62, 182, 230);
 }
